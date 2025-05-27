@@ -16,3 +16,6 @@ db.sqlite3
 # OS
 .DS_Store
 Thumbs.db
+
+# Unfinished
+blog/fbv_views.py
