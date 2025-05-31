@@ -38,10 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog', # Custom app for the blog
-    'users,'
+    'users',
     'crispy_forms',  # For crispy forms
     'crispy_bootstrap4',  # For Bootstrap 4 support in crispy forms
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'home'  # Redirect to blog home after login
+LOGIN_URL = 'login'  # Redirect to login page if not authenticated
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
