@@ -35,6 +35,13 @@ The project includes two main apps — **`blog`** and **`users`** — and uses *
 
 ---
 
+## Requirements
+- Python 3.x
+- Dependencies listed in `requirements.txt`
+
+> Dependencies are pinned to versions known to work as of 2025.
+
+
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the repository
