@@ -83,8 +83,7 @@ Then visit `http://127.0.0.1:8000/` in your browser.
 ## 📸 Preview
 >Images were captured on different devices and resolutions during development; UI styling may vary slightly due to responsive behavior
 ![Screenshot of the blog project](screenshot.PNG)
-
-![Screenshot of the login](screenshot.PNG)
+![Screenshot of the login](screenshot2.PNG)
 
 
 ---
