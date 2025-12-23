@@ -52,8 +52,8 @@ cd <project-folder>
 
 ### 2. Create a virtual environment
 ```bash
-python -m venv venv
-source venv/bin/activate   # On Windows use: venv\Scripts\activate
+python -m venv .venv
+source .venv/bin/activate   # On Windows use: .venv\Scripts\activate
 ```
 
 ### 3. Install dependencies
@@ -81,35 +81,44 @@ Then visit `http://127.0.0.1:8000/` in your browser.
 ---
 
 ## 📸 Preview
-
+>Images were captured on different devices and resolutions during development; UI styling may vary slightly due to responsive behavior
 ![Screenshot of the blog project](screenshot.PNG)
+
+![Screenshot of the login](screenshot.PNG)
+
 
 ---
 
 ## 📂 Project Structure
 
 ```
-myproject/
+root
 │
-├── blog/
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
-│   └── templates/blog/
+├── src/
+│   ├── blog/
+│   │   ├── models.py        """Database models for blog posts."""
+│   │   ├── views.py         """Views for displaying and managing blog content """
+│   │   ├── urls.py          """URL patterns for the blog application."""
+│   │   └── templates/blog/
+│   │
+│   ├── users/
+│   │   ├── views.py         """User-related views such as profile and authentication helpers."""
+│   │   ├── forms.py         """Forms used for user registration and profile updates."""
+│   │   ├── urls.py          """URL patterns for user-related views."""
+│   │   └── templates/users/
+│   │
+│   ├── myproject/
+│   │   ├── settings.py      """Django settings for the myproject project."""
+│   │   ├── urls.py          """Root URL configuration for the project."""
+│   │   ├── asgi.py
+│   │   └── wsgi.py
+│   │
+│   └── manage.py            """Django's command-line utility for administrative tasks."""
 │
-├── users/
-│   ├── views.py
-│   ├── forms.py
-│   ├── urls.py
-│   └── templates/users/
-│
-├── myproject/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
-│
-└── manage.py
+├── README.md
+├── requirements.txt 
+└── .gitignore
+
 ```
 
 ---
